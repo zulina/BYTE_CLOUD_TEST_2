@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <span id="message">Where are your users? Choose the number for every region.</span>
+        <a href="#" id="next" style="display: none">Next</a>
+        <a href="#" id="start" style="display: none">Start</a>
+    </div>
+    <div class="map">
+        <img src="./elements/map.png" alt="map" />
+        <div id="result" class="result" style="display: none">
+            <table class="result_table">
+                <thead>
+                    <tr>
+                        <th colspan="3">Byte Cloud</th>
+                        <th colspan="3">Object Storage</th>
+                    </tr>
+                </thead>
+                <tbody id="result_body">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

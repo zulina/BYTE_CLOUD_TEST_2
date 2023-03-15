@@ -1,0 +1,189 @@
+/* :root {
+    --man-width: 21px;
+    --man-height: 48px;
+    --man-pos-left: 250px;
+    --man-pos-bottom: 400px;
+} */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.map {
+    position: relative;
+    display: inline-block;
+}
+
+.map img {
+    display: block;
+}
+
+.man_small {
+    background: url("./elements/man_empty.png") center / contain  no-repeat;
+    /* width: calc(var(--man-width)/3);
+    height: calc(var(--man-height)/3); */
+    position: absolute;
+    /* left: var(--man-pos-left);
+    bottom: var(--man-pos-bottom); */
+}
+
+.man_medium {
+    background: url("./elements/man_empty.png") center / contain  no-repeat;
+    /* width: calc(var(--man-width)*2/3);
+    height: calc(var(--man-height)*2/3); */
+    position: absolute;
+    /* left: calc(var(--man-pos-left) + var(--man-width)/3);
+    bottom: var(--man-pos-bottom); */
+}
+
+.man_large {
+    background: url("./elements/man_empty.png") center / contain  no-repeat;
+    /* width: calc(var(--man-width));
+    height: calc(var(--man-height)); */
+    position: absolute;
+    /* left: calc(var(--man-pos-left) + var(--man-width));
+    bottom: var(--man-pos-bottom); */
+}
+
+.man_small:hover, .man_medium:hover, .man_large:hover {
+    background: url("./elements/man_filled.png") center / contain no-repeat;
+}
+
+.small {
+    background: url("./elements/small.png") center / contain  no-repeat;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+}
+
+.medium {
+    background: url("./elements/medium.png") center / contain  no-repeat;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+}
+
+.large {
+    background: url("./elements/large.png") center / contain  no-repeat;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+}
+
+.data {
+    background: url("./elements/circle_empty.png") center / contain  no-repeat;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+}
+
+.data:hover {
+    background: url("./elements/circle_filled.png") center / contain no-repeat;
+}
+
+.server {
+    background: url("./elements/server.png") center / contain  no-repeat;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+}
+
+.server_BC {
+    background: url("./elements/server_ByteCloud.png") center / contain  no-repeat;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+}
+
+.connect {
+    /* background: url("./elements/arc_west-usa_north-america_medium.png") center / contain  no-repeat; */
+    width: 1280px;
+    height: 720px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+.connect_text {
+    /* width: 1280px;
+    height: 720px; */
+    position: absolute;
+    left: 400px;
+    bottom: 400px;
+}
+
+.mask {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+}
+
+.mask_small {
+    background: url("./elements/small_mask.png") center / contain  no-repeat;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+.mask_medium {
+    background: url("./elements/medium_mask.png") center / contain  no-repeat;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+.mask_large {
+    background: url("./elements/large_mask.png") center / contain  no-repeat;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+.result {
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    bottom: 0px;
+}
+
+.result_table {
+    position: absolute;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    table-layout: auto;
+    width: 800px;
+    /* border-collapse: collapse; */
+}
+
+.result_table tbody th, .result_table tbody td {
+    background-color: rgb(90, 160, 95);
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.result_table thead th {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.result_table .table_indent {
+    background-color: unset;
+    border: none;
+    padding: 5px;
+}
+
+.result_table .stars {
+    text-align: right;
+}
